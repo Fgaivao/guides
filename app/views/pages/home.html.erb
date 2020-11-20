@@ -1,0 +1,6 @@
+<% if guide_signed_in? %>
+<%= current_guide.email %>
+<% current_guide.guide_skills.each do |gs| %>
+<li><%= gs %></li>
+<% end %>
+<% end %>
